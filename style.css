@@ -1,0 +1,130 @@
+/*Definição de fonte*/
+@font-face{
+    font-family: "Unbounded";
+    src: url("../tecboard/fonts/Unbounded-Bold.ttf")
+    format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-swap: swap;
+}
+@font-face{
+    font-family: "Poppins";
+    src: url("../tecboard/fonts/Poppins-Regular.ttf")
+    format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-swap: swap;
+}
+
+/*Reset*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Estilo Desktop*/
+body{
+    background-color:#ffffff ;
+    color: black;
+}
+
+header img{
+    display: block;
+    margin: 75px 0 0 360px; /* cima esquerda baixo direita */
+}
+h1{
+    font-family:"Unbounded", sans-serif;
+    font-size: 64px;
+    font-weight: bold; /* peso da fonte */
+    text-align: center;
+    margin-top: 60px;
+}
+
+h1 span{
+    color: #9747ff;
+}
+/* opção 1:
+h1, p, a {
+    color: #ffffff;
+}
+
+Opção 2: 
+.cor-branca{
+    color: #000000;
+}
+*/
+
+p{ 
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    text-align: center;
+    margin: 24px auto 0;
+    width: 792px;
+
+}
+
+a{
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+    background-color: #9747ff;
+    width: 340px;
+    height: 66px;
+    display: block;
+    text-align: center;
+    line-height: 66px;
+    border-radius: 36px;
+    margin: 40px auto;
+}
+
+a:hover{
+    background-color: #8233e8;
+
+}
+section img{
+    display: block;
+    width: 792px;
+    height: 446px;
+    margin: 0 auto;
+}
+
+/*responsividade, quando tiver uma tela abaixo de 768 que é a dimenção do tablet ele vai mudar algumas coisas*/
+@media(max-width: 768px){
+    header img{
+        margin: 65px 0 0 60px;
+    }
+
+    p{
+        width: 648px;
+    }
+
+
+
+}
+/*Dimenções do celular*/
+@media(max-width: 375px){
+    header img{
+        margin: 32px 0 0 16px;
+    }
+    h1{
+        font-size: 40px;
+    }
+
+    p{
+        font-size: 20px;
+        width: 340px;
+
+    }
+    a{
+        font-size: 20px;
+        width: 251px;
+
+    }
+    
+    section img{
+        width: 340px;
+        height:230px;
+    }
+    
+}
